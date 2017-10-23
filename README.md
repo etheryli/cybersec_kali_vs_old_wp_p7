@@ -18,6 +18,7 @@ Time spent: **6** hours spent in total
     - CVE-ID: CVE-2017-6817
   - [x] GIF Walkthrough: 
     - [Link 1](https://i.imgur.com/NJzr7hf.gifv)
+    - img src='https://i.imgur.com/NJzr7hf.gifv' title='GIF Walkthrough' width='' alt='GIF Walkthrough' /> 
   - [x] Steps to recreate: 
   - Open up a post to edit to add an embed Youtube video URL
   - Modify the embed Youtube URL like this example:
