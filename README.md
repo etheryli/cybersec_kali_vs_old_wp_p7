@@ -30,29 +30,37 @@ Time spent: **6** hours spent in total
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.1.8
-    - Fixed in version: 4.7.3
+    - Fixed in version: 4.2.13
+    - Patched in version: 4.7.3
     - CVE-ID: CVE-2017-6814
   - [x] GIF Walkthrough: 
-    - [Link 3](https://i.imgur.com/XMmQphP.gifv)
+    - [Link 3](https://i.imgur.com/GKmLBNg.gifv)
   - [x] Steps to recreate: 
   - Upload Metadata injected Mp3 to Media Library 
   - Insert an Audio Playlist in a Post containing this Mp3
   - [x] Affected source code:
     - [Link 4](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
 3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 6](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [x] Summary: 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename
+    - Vulnerability types: Authenticated Stored XSS
+    - Tested in version: 4.1.8
+    - Fixed in version: 4.2.10
+    - Patched in version: 4.6.1
+    - CVE-ID: CVE-2016-7168
+  - [x] GIF Walkthrough: 
+    - [Link 5](https://i.imgur.com/aKl6jQH.gifv)
+  - [x] Steps to recreate: 
+  - Upload any image
+  - Rename title of image to inject something like: "cengizhansahinsumofpwn<img src=a onerror=alert(document.cookie)>.jpg"
+  - Post the image as an attachment page when user clicks on it
+  - View the attachment page of the image
+  - [x] Affected source code:
+    - [Link 6](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
     
 ## Assets
 
 List any additional assets, such as scripts or files:
-Asset audio file for 2: [Link 7](https://www.securify.nl/advisory/SFY20160742/xss.mp3)
+  - Asset audio file for 2: [Link 7](https://www.securify.nl/advisory/SFY20160742/xss.mp3)
 
 ## Resources
 
