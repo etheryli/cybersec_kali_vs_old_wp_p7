@@ -16,15 +16,17 @@ Time spent: **6** hours spent in total
     - Fixed in version: 4.2.13
     - Patched in version: 4.7.3
     - CVE-ID: CVE-2017-6817
-  - [ ] GIF Walkthrough: 
+  - [x] GIF Walkthrough: 
+    - [Link 1](https://i.imgur.com/NJzr7hf.gifv)
   - [x] Steps to recreate: 
   - Open up a post to edit to add an embed Youtube video URL
-  - Add "[embed src='https://youtube.com/embed/12345<svg onload=alert(1)>'][/embed]" to the post text
-  - Post the post with any title
-  - An error message will display
+  - Modify the embed Youtube URL like this example:
+  - "[embed src='https://youtube.com/embed/12345<svg onload=alert(1)>'][/embed]" 
+  - Publish the post with any title and the injected XSS embed URL
+  - An error message will display when the post is viewed
   - [x] Affected source code:
-    - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
-2. (Required) Vulnerability Name or ID
+    - [Link 2](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
+2. (Required) 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
