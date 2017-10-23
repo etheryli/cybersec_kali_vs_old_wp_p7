@@ -4,59 +4,49 @@
 
 Time spent: **6** hours spent in total
 
-> Objective: Find, analyze, recreate, and document **three to five vulnerabilities** affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document **three (required) to five (optional) vulnerabilities** affecting an old version of WordPress
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
 
+1. (Required) 4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+  - [x] Summary: 
+    - Vulnerability types: Stored XSS in WP Core
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.13
+    - Patched in version: 4.7.3
+    - CVE-ID: CVE-2017-6817
+  - [ ] GIF Walkthrough: 
+  - [x] Steps to recreate: 
+  - Open up a post to edit to add an embed Youtube video URL
+  - Add "[embed src='https://youtube.com/embed/12345<svg onload=alert(1)>'][/embed]" to the post text
+  - Post the post with any title
+  - An error message will display
+  - [x] Affected source code:
+    - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
+2. (Required) Vulnerability Name or ID
+  - [ ] Summary: 
+    - Vulnerability types:
+    - Tested in version:
+    - Fixed in version: 
+  - [ ] GIF Walkthrough: 
+  - [ ] Steps to recreate: 
+  - [ ] Affected source code:
+    - [Link 2](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+3. (Required) Vulnerability Name or ID
+  - [ ] Summary: 
+    - Vulnerability types:
+    - Tested in version:
+    - Fixed in version: 
+  - [ ] GIF Walkthrough: 
+  - [ ] Steps to recreate: 
+  - [ ] Affected source code:
+    - [Link 3](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    
 ## Assets
 
-List any additional assets, such as scripts or files
+List any additional assets, such as scripts or files:
+
 
 ## Resources
 
@@ -71,7 +61,7 @@ Describe any challenges encountered while doing the work
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [Hung Nguyen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
